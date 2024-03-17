@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table concepts</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>general tables</legend>
+    <h2>Table</h2>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>surname</th>
+            <th>address</th>
+        </tr>
+        <tr>
+            <td>kusuma</td>
+            <td>torrikonda</td>
+            <td>eluru</td>
+        </tr>
+        <tr>
+            <td>raviteja</td>
+            <td>torrikonda</td>
+            <td>vijayawada</td>
+        </tr>
+    </table>
+    <h3>table using colspan</h3>
+    <table>
+        <tr>
+            <th colspan="2">name</th>
+         <th>address</th>
+         <th colspan="2">institution</th>
+        </tr>
+        <tr>
+            <td>kusuma</td>
+            <td>torrikonda</td>
+            <td>eluru</td>
+            <td>ECECT clg</td>
+            <td>eluru</td>
+        </tr>
+        <tr>
+            <td>raviteja</td>
+            <td>torrikonda</td>
+            <td>vijayawada</td>
+            <td>siddhartha clg</td>
+            <td>nuzvid</td>
+        </tr>
+    </table>
+    <h3>table using rowspan</h3>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>surname</th>
+            <th>address</th>
+            <th>contact</th>
+            <th>institution</th>
+        </tr>
+        <tr>
+            <td>kusuma</td>
+            <td rowspan="3">torrikonda</td>
+            <td rowspan="3">eluru</td>
+            <td>13456781623</td>
+            <td>ECET CLG</td>
+        </tr>
+        <tr>
+            <td>raviteja</td>
+            <!-- <td>torrikonda</td> -->
+            <!-- <td>vijayawada</td> -->
+            <td>7075880446</td>
+            <td>siddhartha</td>
+        </tr>
+        <tr>
+            <td>mounika</td>
+             <!-- <td>torrikonda</td> -->
+            <!-- <td>vikj</td> -->
+            <td>2456826545</td>
+            <td>vikas</td>
+        </tr>
+    </table>
+    <h3>ipl schedule table</h3>
+    <table>
+        <tr>
+            <th>matchday</th>
+            <th>match no</th>
+            <th>day</th>
+            <th>date</th>
+            <th>time</th>
+            <th>home team</th>
+            <th>away team</th>
+            <th>venue</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>fri</td>
+            <td>31-mar-2023</td>
+            <td>7:30pm</td>
+            <td>gujarat titans</td>
+            <td>chennai super kings</td>
+            <td>ahmedabad</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>sat</td>
+            <td>1-apr-2023</td>
+            <td>3:30pm</td>
+            <td>punjab kings</td>
+            <td>kolkata knight riders</td>
+            <td>mohali</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>sat</td>
+            <td>1-apr-2023</td>
+            <td>7:30pm</td>
+            <td>Lucknow Super Giants</td>
+            <td>Delhi Capitals</td>
+            <td>Lucknow</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>Sun</td>
+            <td>02-Apr-23</td>
+            <td>3:30pm</td>
+            <td>Sunrisers Hyderabad</td>
+            <td>Rajasthan Royals</td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>5</td>
+            <td>Sun</td>
+            <td>02-Apr-23</td>
+            <td>7:30pm</td>
+            <td>Royal Challengers Bangalore</td>
+            <td>Mumbai Indians</td>
+            <td>Bengaluru</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>6</td>
+            <td>Mon</td>
+            <td>03-Apr-23</td>
+            <td>7:30pm</td>
+            <td>Chennai Super Kings </td>
+            <td>Lucknow Super Giants</td>
+            <td>aChennai</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>7</td>
+            <td>Tue </td>
+            <td>04-Apr-23</td>
+            <td>7:30pm</td>
+            <td>Delhi Capitals</td>
+            <td>Gujarat Titans</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>8</td>
+            <td>Wed</td>
+            <td>05-Apr-23</td>
+            <td>7:30pm</td>
+            <td>Rajasthan Royals</td>
+            <td>Punjab Kings</td>
+            <td>Guwahati</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>9</td>
+            <td>Thu</td>
+            <td>06-Apr-23</td>
+            <td>7:30pm</td>
+            <td>Kolkata Knight Riders</td>
+            <td>Royal Challengers Bangalore</td>
+            <td>Kolkata</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>10</td>
+            <td> Fri</td>
+            <td> 07-Apr-23 </td>
+            <td>7:30pm</td>
+            <td>Lucknow Super Giants</td>
+            <td>Sunrisers Hyderabad </td>
+            <td>Lucknow</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>11 </td>
+            <td>Sat</td>
+            <td>08-Apr-23 </td>
+            <td>3:30pm</td>
+            <td>Rajasthan Royals</td>
+            <td>Delhi Capitals</td>
+            <td>Guwahati</td>
+           
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>12</td>
+          <td>Sat</td>
+          <td>08-Apr-23</td>
+          <td>7:30 PM </td>
+          <td>Mumbai Indians </td>
+          <td>Chennai Super Kings </td>
+          <td>Mumbai</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>13</td>
+            <td>Sun</td>
+            <td>09-Apr-23</td>
+            <td>3:30 PM</td>
+            <td>Gujarat Titans</td>
+            <td>Kolkata Knight Riders</td>
+            <td>Ahmedabad</td>
+            
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>14</td>
+            <td>Sun</td>
+            <td>09-Apr-23</td>
+            <td>7:30 PM </td>
+            <td>Sunrisers Hyderabad</td>
+            <td>Punjab Kings </td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            <td>11 </td>
+            <td>15</td>
+            <td>mon</td>
+            <td>10-Apr-23</td>
+            <td>7:30pm</td>
+            <td>Royal Challengers Bangalore</td>
+            <td>Lucknow Super Giants</td>
+            <td>Bengaluru</td>
+            
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>16</td>
+            <td>Tue</td>
+            <td> 11-Apr-23</td>
+            <td>7:30pm</td>
+            <td>Delhi Capitals</td>
+            <td> Mumbai Indians</td>
+            <td>Delhi</td>
+            
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>17 </td>
+            <td>wed</td>
+            <td>12-Apr-23</td>
+            <td>7:30 PM</td>
+            <td>Chennai Super Kings</td>
+            <td>Rajasthan Royals </td>
+            <td>Chennai</td>
+            
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>18</td>
+            <td>Thu</td>
+            <td>13-Apr-23</td>
+            <td>7:30pm</td>
+            <td>Punjab Kings</td>
+            <td>Gujarat Titans </td>
+            <td>Mohali</td>
+            
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>19</td>
+            <td>fri</td>
+            <td>14-Apr-23</td>
+            <td>7:30 PM</td>
+            <td>Kolkata Knight Riders</td>
+            <td>Sunrisers Hyderabad </td>
+            <td>Kolkata</td>
+             
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>20</td>
+            <td>Sat </td>
+        <td>15-Apr-23</td>
+            <td>3:30 pm</td>
+            <td> Royal Challengers </td>
+            <td>Delhi Capitals</td>
+            <td>Bangalore</td>
+            
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>21</td>
+            <td>Sat</td>
+            <td>15-Apr-23</td>
+            <td>7:30 PM</td>
+            <td>Lucknow Super Giants</td>
+            <td>Punjab Kings</td>
+            <td>Lucknow</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>22</td>
+            <td> Sun</td>
+            <td>16-Apr-23</td>
+            <td>3:30 PM</td>
+            <td>Mumbai Indians</td>
+            <td>Kolkata Knight Riders</td>
+            <td>Mumbai</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>23</td>
+            <td>Sun </td>
+            <td>16-Apr-23</td>
+            <td>7:30 PM</td>
+            <td>Gujarat Titans</td>
+            <td>Rajasthan Royals</td>
+            <td>Ahmedabad</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>24</td>
+            <td>Mon</td>
+            <td>17-Apr-23</td>
+            <td>7:30 PM </td>
+            <td>Royal Challengers Bangalore </td>
+            <td>Chennai Super Kings</td>
+            <td>Bengaluru</td>
+        </tr>
+        <!-- <tr> -->
+            <td>19</td>
+            <td>25</td>
+            <td>Tue</td>
+            <td> 18-Apr-23</td>
+            <td>7:30 PM </td>
+            <td>Sunrisers Hyderabad</td>
+            <td>Mumbai Indians</td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>26</td>
+            <td>Wed</td>
+            <td> 19-Apr-23</td>
+            <td>7:30 PM</td>
+            <td>Rajasthan Royals</td>
+            <td>Lucknow Super Giants</td>
+            <td> Jaipur</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>27</td>
+            <td>Thu</td>
+            <td>20-Apr-23</td>
+            <td>3:30 PM </td>
+            <td>Punjab Kings</td>
+            <td>Royal Challengers Bangalore</td>
+            <td>Mohali</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>28</td>
+            <td>Thu</td>
+            <td>20-Apr-23</td>
+            <td>7:30 PM</td>
+            <td>Delhi Capitals </td>
+            <td>Kolkata Knight Riders</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>22 </td>
+            <td>29 </td>
+            <td>Fri</td>
+            <td>21-Apr-23</td>
+            <td>7:30 PM </td>
+            <td>Chennai Super Kings </td>
+            <td>Sunrisers Hyderabad</td>
+            <td>Chennai</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td> 30</td>
+            <td>Sat</td>
+            <td> 22-Apr-23</td>
+            <td>3:30 PM</td>
+            <td>Lucknow Super Giants</td>
+            <td>Gujarat Titans</td>
+            <td>Lucknow</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>31</td>
+            <td>Sat </td>
+            <td>22-Apr-23</td>
+            <td>7:30 PM</td>
+            <td> Mumbai Indians</td>
+            <td>Punjab Kings</td>
+            <td>Mumbai</td>
+           
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>32</td>
+            <td>Sun</td>
+            <td>23-Apr-23</td>
+            <td>3:30 PM </td>
+            <td>Royal Challengers Bangalore</td>
+            <td>Rajasthan Royals</td>
+            <td>Bengaluru</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>33 </td>
+            <td>Sun</td>
+            <td>23-Apr-23</td>
+            <td>7:30 PM</td>
+            <td> Kolkata Knight Riders</td>
+            <td>Chennai Super Kings</td>
+            <td> Kolkata</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>34</td>
+            <td>Mon</td>
+            <td>24-Apr-23</td>
+            <td>7:30 PM </td>
+            <td>Sunrisers Hyderabad</td>
+            <td>Delhi Capitals</td>
+            <td>yderabad</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>35</td>
+            <td>Tue</td>
+            <td>25-Apr-23</td>
+            <td> 7:30 PM</td>
+            <td>Gujarat Titans</td>
+            <td>Mumbai Indians</td>
+            <td>Ahmedabad</td>
+        </tr>
+        <tr>
+            <td>27 </td>
+            <td> 36</td>
+            <td>Wed</td>
+            <td>26-Apr-23</td>
+            <td> 7:30 PM</td>
+            <td> Royal Challengers Bangalore</td>
+            <td>Kolkata Knight Riders </td>
+            <td>Bengaluru</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>37 </td>
+            <td>Thu</td>
+            <td>27-Apr-23 </td>
+            <td>7:30 PM</td>
+            <td>Rajasthan Royals</td>
+            <td>Royals Chennai Super Kings</td>
+            <td>Jaipur</td>
+        </tr>
+
+    </table> 
+</fieldset>
+    <fieldset>
+        <legend>about hero's</legend>
+   
+<table>
+    <tr>
+        <th>slno</th>
+        <th>image</th>
+        
+       <th>content</th>
+        <th>song</th>
+        <th>awards</th>
+      
+        
+    </tr>
+    <tr>
+        <td>1</td>
+        <td><img src= "https://i.pinimg.com/originals/9f/0a/bc/9f0abc9723a56641a878076103755cb9.jpg" height="100"width="100"></td>
+        <td><a href="https://en.wikipedia.org/wiki/Dulquer_Salmaan"target="_blank">dq</a></td>
+
+        <td><a href="https://www.youtube.com/watch?v=VzT2xurZrbI"target="_blank">dqsong</a></td>
+      <td> <iframe controls width="300" height="150" src="https://www.youtube.com/embed/CIZjcJsVGkU?si=hIYn1sBMxb4sET2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+
+    </tr>
+    <tr>
+        <td>2</td>
+       
+       
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/N.T.Rama_Rao_Jr._at_the_RRR_Press_Meet_in_Chennai.jpg/440px-N.T.Rama_Rao_Jr._at_the_RRR_Press_Meet_in_Chennai.jpg" height="100" width="100"></td>
+        <td><a href="https://en.wikipedia.org/wiki/N._T._Rama_Rao_Jr."target="_blank">jr ntr</a></td>
+        <td><a href="https://www.youtube.com/watch?v=UJMUsa-3RYs"target="_blank">ntrsong</a></td>
+   
+        <td><iframe controls width="300" height="150" src="https://www.youtube.com/embed/byvqAINMJYI?si=HlQth3FK92Lbx9pL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><img src="https://w0.peakpx.com/wallpaper/670/921/HD-wallpaper-vijay-deverakonda-arjun-reddy-attitude-badboy-happy-joker-love.jpg" height="100" width="100"></td>
+        <td><a href="https://en.wikipedia.org/wiki/Vijay_Deverakonda" target="_blank">vijay devarakonda</a></td>
+        <td><a href="https://www.youtube.com/watch?v=jOst7Trpj7o"target="_blank">vd song</a></td>
+        <td><iframe controls width="300" height="150" src="https://www.youtube.com/embed/TPQgVQCZHn8?si=D0h9MNi99O7dgh-O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTInNrryCQM0iZR9gbpEa4RqHmU4sbcqqKhKU_dnye6QA&s"height="50"width="50"></td>
+        <td><a href="https://en.wikipedia.org/wiki/Ravi_Teja"target="_blank">raviteja</a></td>
+        <td><a href="outube.com/watch?v=c9fXiv1UELo"target="_blank">rt song</a></td>
+        <td><iframe controls width="300" height="150" src="https://www.youtube.com/embed/XDI3-Unhmfg?si=GcBKbYixCylrK10d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+
+    </tr>
+</table>
+</fieldset>
+</body>
+</html>
